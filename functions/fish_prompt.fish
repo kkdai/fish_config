@@ -1,0 +1,1 @@
+/Users/Evan/.config/fisherman/sol/fish_prompt.fish
