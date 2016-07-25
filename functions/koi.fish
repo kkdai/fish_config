@@ -1,0 +1,1 @@
+/Users/Evan/.config/fisherman/koi/functions/koi.fish

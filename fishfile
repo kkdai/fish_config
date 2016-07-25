@@ -1,8 +1,8 @@
+fisherman/await
 edc/bass
-fisherman/git_util
-fisherman/host_info
-fisherman/humanize_duration
+oh-my-fish/theme-bobthefish
+fisherman/get
+fisherman/getopts
+fisherman/koi
 fisherman/last_job_id
-fisherman/pwd_info
-fisherman/pwd_is_home
-fisherman/sol
+fisherman/shark
