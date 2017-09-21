@@ -16,18 +16,28 @@ set -x PATH $PATH "/usr/local/bin" "/usr/local/heroku/bin"
 
 #Setting for cocoapods
 #
-set -x PATH $PATH $HOME/Software/ruby/bin
+set -x PATH $PATH $HOME/Software/ruby/bin 
 set -x GEM_HOME $HOME/Software/ruby
+set -x LIBRARY_PATH /usr/local/lib
 
 #Other setting
 #
 set -x KKDAI $GOPATH/src/github.com/kkdai
+set -x LINKERP $HOME/Documents/Source_Code/Projects/linker
+set -x ANDROID_NDK_HOME /Users/Evan/Library/Android/sdk/ndk-bundle
+set -x PATH $PATH $ANDROID_NDK_HOME
+set -x PATH $PATH $HOME/Documents/istio-0.1.5/bin
+
 
 #Alias 
 #
 function god 
 	go build -gcflags '-N -l'
 end 
+
+function kc
+	kubectl $argv 
+end
 
 function vi
 	vim $argv
@@ -46,3 +56,5 @@ bass source '/Users/Evan/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 bass source '/Users/Evan/google-cloud-sdk/completion.bash.inc'
+
+# test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
