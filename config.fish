@@ -23,6 +23,7 @@ set -x LIBRARY_PATH /usr/local/lib
 #Other setting
 #
 set -x KKDAI $GOPATH/src/github.com/kkdai
+set -x LINKERGO $GOPATH/src/bitbucket.org/linkernetworks
 set -x LINKERP $HOME/Documents/Source_Code/Projects/linker
 set -x ANDROID_NDK_HOME /Users/Evan/Library/Android/sdk/ndk-bundle
 set -x PATH $PATH $ANDROID_NDK_HOME
