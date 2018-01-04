@@ -29,6 +29,11 @@ set -x ANDROID_NDK_HOME /Users/Evan/Library/Android/sdk/ndk-bundle
 set -x PATH $PATH $ANDROID_NDK_HOME
 set -x PATH $PATH $HOME/Documents/istio-0.1.5/bin
 
+#OMF setting for bobthefish
+#
+set -g theme_display_date no
+set -g theme_nerd_fonts yes
+set -g theme_display_k8s_context no
 
 #Alias 
 #
