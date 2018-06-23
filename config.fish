@@ -24,16 +24,19 @@ set -x LIBRARY_PATH /usr/local/lib
 #
 set -x KKDAI $GOPATH/src/github.com/kkdai
 set -x LINKERGO $GOPATH/src/bitbucket.org/linkernetworks
+set -x LINKERGITHUBGO $GOPATH/src/github.com/linkernetworks
 set -x LINKERP $HOME/Documents/Source_Code/Projects/linker
 set -x ANDROID_NDK_HOME /Users/Evan/Library/Android/sdk/ndk-bundle
 set -x PATH $PATH $ANDROID_NDK_HOME
-set -x PATH $PATH $HOME/Documents/istio-0.1.5/bin
 
 #OMF setting for bobthefish
 #
 set -g theme_display_date no
 set -g theme_nerd_fonts yes
-set -g theme_display_k8s_context no
+
+#Setting for conda
+#
+set -x PATH $PATH $HOME/miniconda3/bin
 
 #Alias 
 #
@@ -63,4 +66,4 @@ bass source '/Users/Evan/google-cloud-sdk/path.bash.inc'
 # The next line enables shell command completion for gcloud.
 bass source '/Users/Evan/google-cloud-sdk/completion.bash.inc'
 
-# test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
+test -e {$HOME}/.iterm2_shell_integration.fish ; and source {$HOME}/.iterm2_shell_integration.fish
